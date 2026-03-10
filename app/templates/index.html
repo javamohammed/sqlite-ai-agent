@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SQLite AI Agent</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <div class="app-layout">
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h2>Tables</h2>
+        <button id="refreshTablesBtn" class="secondary-btn" type="button">Refresh Tables</button>
+      </div>
+
+      <div class="sidebar-search">
+        <input
+          id="tableSearchInput"
+          type="text"
+          placeholder="Search tables..."
+        />
+      </div>
+
+      <div id="tablesList" class="tables-list">
+        <div class="sidebar-empty">Loading tables...</div>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <div class="container">
+        <div class="top-bar">
+          <div>
+            <h1>SQLite AI Agent</h1>
+            <p class="subtitle">
+              Ask the agent to read, insert, update, or delete records from your database.
+            </p>
+          </div>
+          <button id="clearChatBtn" class="secondary-btn" type="button">Clear Chat</button>
+        </div>
+
+        <section class="data-panel">
+          <div class="panel-card">
+            <div class="panel-header">
+              <h3>Selected Table</h3>
+            </div>
+            <div id="selectedTableInfo" class="panel-body muted-text">
+              No table selected.
+            </div>
+          </div>
+
+          <div class="panel-card">
+            <div class="panel-header">
+              <h3>Schema</h3>
+            </div>
+            <div id="schemaContainer" class="panel-body">
+              <div class="muted-text">Click a table to view its schema.</div>
+            </div>
+          </div>
+
+          <div class="panel-card">
+            <div class="panel-header">
+              <h3>First 20 Rows</h3>
+            </div>
+            <div id="previewContainer" class="panel-body">
+              <div class="muted-text">Click a table to preview its rows.</div>
+            </div>
+          </div>
+        </section>
+
+        <div class="chat-box" id="chatBox"></div>
+
+        <form id="chatForm" class="chat-form">
+          <textarea
+            id="messageInput"
+            placeholder="Example: Show me the first 10 users"
+            rows="4"
+          ></textarea>
+          <div class="actions">
+            <button type="submit">Send</button>
+          </div>
+        </form>
+      </div>
+    </main>
+  </div>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
