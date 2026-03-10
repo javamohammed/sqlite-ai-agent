@@ -349,7 +349,12 @@ Example:
 MIT License
 Copyright (c) 2026
 ```
+## Author
 
+**Mohammed Aoulad Bouchta**
+
+- GitHub: https://github.com/your-username
+- Email: java.mohammed@gmail.com
 ---
 
 # 🙏 Acknowledgements
