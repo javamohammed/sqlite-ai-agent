@@ -353,7 +353,7 @@ Copyright (c) 2026
 
 **Mohammed Aoulad Bouchta**
 
-- GitHub: https://github.com/your-username
+- GitHub: https://github.com/javamohammed
 - Email: java.mohammed@gmail.com
 ---
 
